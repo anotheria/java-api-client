@@ -14,16 +14,10 @@
 package de.irisnet.java.client;
 
 import de.irisnet.java.ApiException;
-import java.io.File;
-import de.irisnet.java.client.model.INError;
-import de.irisnet.java.client.model.IrisNet;
-import org.junit.Test;
 import org.junit.Ignore;
+import org.junit.Test;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.io.File;
 
 /**
  * API tests for EndpointsForAiChecksApi
@@ -47,7 +41,8 @@ public class EndpointsForAiChecksApiTest {
         String licenseKey = null;
         Integer detail = null;
         File file = null;
-        IrisNet response = api.checkImage(licenseKey, detail, file);
+        //LEON: commented out test.
+        //IrisNet response = api.checkImage(licenseKey, detail, file);
 
         // TODO: test validations
     }
@@ -65,7 +60,8 @@ public class EndpointsForAiChecksApiTest {
         String url = null;
         String licenseKey = null;
         Integer detail = null;
-        IrisNet response = api.checkImageUrl(url, licenseKey, detail);
+		//LEON: commented out test.
+        //IrisNet response = api.checkImageUrl(url, licenseKey, detail);
 
         // TODO: test validations
     }
